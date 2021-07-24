@@ -1,3 +1,23 @@
+// FONTS
+@font-face {
+  font-family: 'Montserrat';
+  src: URL('../assets/fonts/Montserrat-Bold\ copy.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Courier';
+  src: URL('../assets/fonts/cour.ttf') format('truetype');
+}
+
+// TYPOGRAPHY
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+p {
+  font-family: 'Courier', monospace;
+  color: #444;
+}
+
 // HERO
 .hero {
   img {
@@ -7,5 +27,5 @@
 
 // ABOUT
 .about {
-  
+
 }
