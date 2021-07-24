@@ -18,6 +18,18 @@ p {
   color: #444;
 }
 
+// SECTIONS
+.light-bg {
+  background-image: url(../assets/images/stars_inverse.jpg);
+  background-size: cover;
+}
+.dark-bg {
+  background-image: url(../assets/images/stars.jpg);
+  background-size: cover;
+  color: #fff;
+  p {color: #fff;}
+}
+
 // HERO
 .hero {
   img {
