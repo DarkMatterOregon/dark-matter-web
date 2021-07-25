@@ -12,25 +12,41 @@
   <div class="container-fluid">
     <!-- Hero -->
     <section class="hero row">
-      <img src="./assets/images/splash.jpg" alt="Dark Matter Consulting" class="p-0">
+      <img src="./assets/images/splash.jpg" alt="Dark Matter Consulting" class="p-0 w-100">
     </section>
   
-    <!-- About -->
-    <section class="about row py-5 px-5 light-bg">
+    <!-- Who We Are -->
+    <section class="row py-5 px-5 light-bg">
       <div class="col-12 col-md-6 pe-md-5">
         <h2>Who We Are</h2>
         <p>We are technologists that believe in innersourcing and team augmentation. Dark Matter consultants have a wide spectrum of skills to fit the missing elements in your company's tech story. Our founders Doug and Mark have deep histories with .Net and have been building products for a wide range of industries from large event management, food networks, supply-chains, criminal justice and wellness apps. Based in Eugene Oregon, all of our consultants are locally sourced from the talent pools of the local Universities and Colleges as well as seasoned experts. With team shaping, we can craft a skillset to best-fit your project’s technical needs and budget. We are community minded. We support local civic tech projects and provide upskilling to the local talent pipeline.</p>
       </div>
 
       <div class="col-12 col-md-6">
-        <h2>Blazor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-
-        <h2>Azure</h2>
-        <p>corper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolor</p>
-
-        <h2>Oqtane</h2>
-        <p>zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
+        <!-- blazor -->
+        <div class="icon-container">
+          <div class="icon-container-content">
+            <h2>Blazor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          </div>
+          <img src="./assets/images/blazor_logo-transparent.png" alt="Blazor Logo" class="icon-container-icon">
+        </div>
+        <!-- azure -->
+        <div class="icon-container">
+          <div class="icon-container-content">
+            <h2>Azure</h2>
+            <p>corper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolor</p>
+          </div>
+          <img src="./assets/images/blazor_logo-transparent.png" alt="Oqtane Logo" class="icon-container-icon">
+        </div>
+        <!-- oqtane -->
+        <div class="icon-container">
+          <div class="icon-container-content">
+            <h2>Oqtane</h2>
+            <p>zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
+          </div>
+          <img src="./assets/images/blazor_logo-transparent.png" alt="" class="icon-container-icon">
+        </div>
       </div>
     </section>
 
@@ -41,7 +57,28 @@
       </div>
 
       <div class="col-12 col-md-6">
-        <p>CAROUSEL</p>
+        <!-- carousel -->
+        <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/splash.jpg" class="d-block w-100" alt="Dark Matter Consulting">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/moon_edit.png" class="d-block w-100" alt="Dark Matter Consulting">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/stars.jpg" class="d-block w-100" alt="Dark Matter Consulting">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
 
       <div class="col-12 col-md-6">
@@ -50,7 +87,7 @@
     </section>
 
     <!-- Remote Team Building -->
-    <section class="remote-team-building row pb-5 px-5 pt-3 dark-bg">
+    <section class="remote-team-building row px-5 py-5 dark-bg">
       <div class="col-12 col-md-6 pe-md-5">
         <h2>Remote Team Building</h2>
         <p>We are remote team builders. Our projects are distributed and staffed by digital natives. We stay in constant contact using chat and cloud based project management tools. Trained as Mozilla Open Leaders, our leads have skills building empathy and creating inclusive environments for collaboration. We can help you build a world-class remote work culture.</p>
@@ -67,84 +104,148 @@
         <p>We are one of the first teams delivering Blazor Server Apps in production. Web Assembly opens up a new world of web development and we’ll be the first to deliver Blazor Client Apps as well. It’s not often that a game-changing technology comes along that radically simplifies development like Blazor. We might seem like risk-takers at the moment, but Blazor not an experiment. It’s baked into .Net and has a bright</p>
       </div>
     </section>
-
-    <!-- Contact Form -->
-    <section class="contact-form row pb-5 px-5 dark-bg">
-      <div class="col-12 col-md-6  pe-md-5">
+    
+    <!-- Planet Container -->
+    <section class="row pb-5 px-5 dark-bg planet-container">
+      <div class="col-12 col-md-6  pe-md-5 position-relative"  style="overflow: hidden;">
         <h2>Here is what our clients have to say</h2>
+        
+        <div class="row">
+          <div class="col-12 col-sm-8">
+            <p>“quote from client Lorem ipsum dolor sit amet, con- sectetuer adipiscing elit, sed diam nonummy nibh me”</p>
+          </div>
+          <div class="col-0 col-sm-4"></div>
+        </div>
 
         <div class="row">
-          <div class="col-7">
-            <p>“quote from client Lorem ipsum dolor sit amet, con- sectetuer adipiscing elit, sed diam nonummy nibh e”</p>
-          </div>
-
-          <div class="col-7 text-right">
-            <p>“quote from client Lorem ipsum dolor sit amet, con- sectetuer adipiscing elit, sed diam nonummy nibh e”</p>
-          </div>
-
-          <div class="col-7">
-            <p>“quote from client Lorem ipsum dolor sit amet, con- sectetuer adipiscing elit, sed diam nonummy nibh e”</p>
+          <div class="col-0 col-sm-4"></div>
+          <div class="col-12 col-sm-8 text-right">
+            <p>“quote from client Lorem ipsum dolor sit amet, con- sectetuer adipiscing elit, sed diam nonummy nibh me”</p>
           </div>
         </div>
-      </div>
 
+        <div class="row">
+          <div class="col-12 col-sm-8">
+            <p>“quote from client Lorem ipsum dolor sit amet, con- sectetuer adipiscing elit, sed diam nonummy nibh me”</p>
+          </div>
+          <div class="col-0 col-sm-4"></div> 
+        </div>
+      </div>
+      
       <!-- form -->
       <div class="col-12 col-md-6">
         <form action="#">
           <h2>Lets get in touch</h2>
-
+          
           <div class="row">
-            <div class="col-12 col-sm-6">
-              <label for="name">Name:</label>
-              <input type="text" name="name" id="name">
+            <!-- name -->
+            <div class="col-12 col-sm-6 position-relative mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input type="email" class="form-control" id="name">
             </div>
-            <div class="col-12 col-sm-6">
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email">
+            <!-- email -->
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email">
             </div>
           </div>
-
+          
           <div class="row">
-            <div class="col-12 col-sm-6">
-              <label for="eventName">Event Name:</label>
-              <input type="text" name="eventName" id="eventName">
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="eventName" class="form-label">Event Name:</label>
+              <input type="text" class="form-control" name="eventName" id="eventName">
             </div>
-            <div class="col-12 col-sm-6">
-              <label for="date">Date of Event:</label>
-              <input type="date" name="date" id="date">
+            <div class="col-12 col-sm-6 mb-3">
+              <label for="date" class="form-label">Date of Event:</label>
+              <input type="date" class="form-control" name="date" id="date">
             </div>
           </div>
-
+          
           <div class="row">
-            <div class="col-12">
-              <label for="services">Which of our services are you looking for</label>
-              DROPDOWN
+            <div class="col-12 mb-3">
+              <label class="form-label">Which of our services are you looking for</label>
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      &nbsp;
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <ul>
+                        <!-- consulting -->
+                        <li>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="consultingCheck" value="consultingCheck">
+                            <label class="form-check-label ms-1" for="consultingCheck">consulting</label>
+                          </div>
+                        </li>
+                        <!-- Zoom Producer -->
+                        <li>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="zoomProducerCheck" value="zoomProducerCheck">
+                            <label class="form-check-label ms-1" for="zoomProducerCheck">zoom producer</label>
+                          </div>
+                        </li>
+                        <!-- Event Production -->
+                        <li>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="eventProductionCheck" value="eventProductionCheck">
+                            <label class="form-check-label ms-1" for="eventProductionCheck">event production</label>
+                          </div>
+                        </li>
+                        <!-- Video Edit -->
+                        <li>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="videoEditCheck" value="videoEditCheck">
+                            <label class="form-check-label ms-1" for="videoEditCheck">video capturing and editing</label>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
+          
           <div class="row">
-            <div class="col-12">
-              <label for="description">Tell us about your event</label>
-              <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <div class="col-12 mb-3">
+              <label class="form-label" for="description">Tell us about your event</label>
+              <textarea class="w-100 form-control" name="description" id="description" cols="30" rows="8"></textarea>
             </div>
           </div>
-
+          
           <div class="row">
-            <div class="col-6">
-              <button>Cancel</button>
+            <div class="col-6 text-center">
+              <button class="btn btn-secondary">Cancel</button>
             </div>
-
-            <div class="col-6">
-              <button>Send</button>
+            
+            <div class="col-6 text-center">
+              <input type="submit" class="btn btn-primary" value="Send" />
             </div>
           </div>
         </form>
       </div>
+
+      <!-- bg moon -->
+      <img class="moon" src="./assets/images/moon_edit.png" alt="The Moon">
+
+      <!-- bg planet -->
+      <!-- <img class="planet" src="./assets/images/planet_transparent.png" alt="A Planet"> -->
     </section>
   </div>
 
+  <!-- FOOTER -->
+  <footer class="pb-5"></footer> 
   
-  <script src="./js/main.js"></script>
+
+  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
