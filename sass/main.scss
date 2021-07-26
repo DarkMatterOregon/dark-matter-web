@@ -16,12 +16,12 @@ $color-white: #fff;
 
 
 // TYPOGRAPHY
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   z-index: 99;
 }
-p {
+p,h1 { 
   font-family: 'Courier', monospace;
   color: $color-gray-dark;
   z-index: 99;
@@ -55,20 +55,20 @@ p {
     }
   }
 }
-.carousel {
-  &-inner {
-    min-height: 500px;
-  }
+// .carousel {
+//   &-inner {
+//     min-height: 500px;
+//   }
 
-  &-item {
-    min-height: 500px;
-  }
+//   &-item {
+//     min-height: 500px;
+//   }
 
-  img {
-    width: 100%; 
-    max-height: 630px;
-  }
-}
+//   img {
+//     width: 100%; 
+//     max-height: 630px;
+//   }
+// }
 
 
 // BACKGROUND
@@ -103,9 +103,24 @@ p {
   .planet {
     position: absolute;
     bottom: 0;
-    transform: translate(-150px, 213px);
-    z-index: 99;
-    width: 600px;
+    
+    
+    &-bg-container {
+      transform: translateX(-20%);
+      position: absolute;
+      bottom: 0;
+      background-image: url(../assets/images/planet_transparent.png);  
+      background-position: center;
+      background-size: cover;
+      height: 300px; 
+      width: 800px;
+      
+      @media(max-width: 768px) {
+        transform: translateX(-40%);
+        height: 150px; 
+        width: 400px;
+      }
+    }
   }
 }
 
